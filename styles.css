@@ -1,0 +1,350 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4EAE0; /* Fundo bege claro */
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #333; /* Cor do header em tema escuro */
+    color: #fff;
+    padding: 18px; /* Reduzido em 10% de 20px */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+}
+
+nav {
+    margin: 18px 0; /* Reduzido em 10% de 20px */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 13.5px; /* Reduzido em 10% de 15px */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 9px; /* Reduzido em 10% de 10px */
+    border-radius: 4.5px; /* Reduzido em 10% de 5px */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #B03A2E; /* Detalhe vermelho ao passar o mouse */
+    border: 1.8px solid #B03A2E; /* Contorno vermelho ao passar o mouse */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-left: 18px; /* Reduzido em 10% de 20px */
+}
+
+.search-bar input {
+    padding: 9px; /* Reduzido em 10% de 10px */
+    border-radius: 18px; /* Reduzido em 10% de 20px */
+    width: 180px; /* Reduzido em 10% de 200px */
+    background-color: #FFF8F0; /* Fundo bege claro para a barra de pesquisa */
+    transition: border-color 0.3s;
+}
+
+.search-bar input:hover {
+    border-color: #B03A2E; /* Contorno vermelho ao passar o mouse */
+}
+
+.search-bar button {
+    padding: 9px; /* Reduzido em 10% de 10px */
+    border: 1.8px solid #B03A2E; /* Contorno vermelho para o botão */
+    border-radius: 4.5px; /* Reduzido em 10% de 5px */
+    background-color: #FFF8F0; /* Fundo bege claro para o botão */
+    color: #B03A2E; /* Cor do texto do botão */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #333; /* Fundo cinza escuro ao passar o mouse */
+    color: #FFF; /* Cor do texto em branco ao passar o mouse */
+    border-color: #B03A2E; /* Contorno vermelho ao passar o mouse */
+}
+
+main {
+    margin: 18px; /* Reduzido em 10% de 20px */
+}
+
+section {
+    margin-bottom: 36px; /* Reduzido em 10% de 40px */
+}
+
+h2 {
+    border-bottom: 1.8px solid #333; /* Reduzido em 10% de 2px */
+    padding-bottom: 9px; /* Reduzido em 10% de 10px */
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px; /* Reduzido em 10% de 20px */
+    justify-content: center;
+}
+
+.item {
+    background-color: #FFF8F0; /* Fundo bege claro para os itens */
+    border: 1.8px solid #ddd; /* Borda padrão para os itens */
+    border-radius: 9px; /* Reduzido em 10% de 10px */
+    padding: 9px; /* Reduzido em 10% de 10px */
+    width: 180px; /* Reduzido em 10% de 200px */
+    box-shadow: 0 3.6px 7.2px rgba(0,0,0,0.1); /* Reduzido em 10% */
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.item:hover {
+    transform: scale(0.945); /* Reduzido em 10% de 1.05 */
+    border-color: #B03A2E; /* Contorno vermelho ao passar o mouse */
+}
+
+.item img {
+    width: 180px; /* Reduzido em 10% de 200px */
+    height: 333px; /* Reduzido em 10% de 370px */
+    object-fit: cover; /* Garante que a imagem se encaixe bem no contêiner */
+    border-radius: 9px; /* Reduzido em 10% de 10px */
+}
+
+.item h3 {
+    font-size: 16.2px; /* Reduzido em 10% de 18px */
+    margin: 9px 0; /* Reduzido em 10% de 10px */
+}
+
+.item p {
+    font-size: 12.6px; /* Reduzido em 10% de 14px */
+    margin: 4.5px 0; /* Reduzido em 10% de 5px */
+    color: #666;
+}
+
+footer {
+    background: #222; /* Cor do footer em tema escuro */
+    color: #fff;
+    text-align: center;
+    padding: 9px; /* Reduzido em 10% de 10px */
+    margin-top: 18px; /* Reduzido em 10% de 20px */
+}
+
+.movie-section {
+    margin: 72px 18px 18px; /* Reduzido em 10% de 80px */
+}
+
+/* Tema escuro */
+[data-theme="dark"] {
+    background-color: #121212; /* Fundo escuro para o tema escuro */
+    color: #F4F4F4; /* Cor do texto em tema escuro */
+}
+
+[data-theme="dark"] header {
+    background-color: #111; /* Cor do header em tema escuro */
+}
+
+[data-theme="dark"] footer {
+    background-color: #111; /* Cor do footer em tema escuro */
+}
+
+[data-theme="dark"] .item {
+    background-color: #333; /* Fundo escuro para os itens em tema escuro */
+    border: 1.8px solid #555; /* Borda mais clara para os itens em tema escuro */
+}
+
+[data-theme="dark"] .search-bar input,
+[data-theme="dark"] .search-bar button {
+    border-color: #555; /* Borda escura para a barra de pesquisa em tema escuro */
+}
+
+/* Adiciona isso ao final do seu arquivo CSS existente */
+.no-results {
+    text-align: center;
+    font-size: 16.2px; /* Reduzido em 10% de 18px */
+    color: #333;
+    margin-top: 18px; /* Reduzido em 10% de 20px */
+}
+
+/* Classes para ocultar seções e itens */
+.movie-section {
+    display: block;
+}
+
+.movie-section.hidden {
+    display: none;
+}
+
+/* Define o tamanho das imagens em todas as seções */
+.item img {
+    width: 180px; /* Reduzido em 10% de 200px */
+    height: 333px; /* Reduzido em 10% de 370px */
+    object-fit: cover; /* Garante que a imagem se encaixe bem no contêiner */
+}
+
+/* Ajusta o título das seções */
+.movie-section h2 {
+    font-size: 1.8em; /* Reduzido em 10% de 2em */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 18px; /* Reduzido em 10% de 20px */
+    border-bottom: none; /* Remove a linha de separação */
+    padding-bottom: 9px; /* Reduzido em 10% de 10px */
+}
+
+.placeholder {
+    height: 63px; /* Reduzido em 10% de 70px */
+}
+
+/* Fontes específicas para seções */
+#guerra {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+}
+
+#ficcao-cientifica {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#cultura-pop {
+    font-family: "Comic Neue", cursive;
+    font-style: normal;
+}
+
+#drama-crime {
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+}
+
+#biografia {
+    font-family: "Tinos", serif;
+    font-style: normal;
+}
+
+#acao {
+    font-family: "Bangers", system-ui;
+    font-style: normal;
+}
+
+#horror-suspense {
+    font-family: "Creepster", system-ui;
+    font-style: normal;
+}
+
+#animacao-fantasia {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#faroeste {
+    font-family: "Smokum", serif;
+    font-style: normal;
+}
+
+#comedia {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.item p {
+    font-family: 'Arial', sans-serif;
+    font-size: 12.6px; /* Reduzido em 10% de 14px */
+    color: #666;
+    margin: 4.5px 0; /* Reduzido em 10% de 5px */
+}
+
+/* Estilo para o ícone de estrela amarela */
+.item .rating {
+    display: flex;
+    align-items: center;
+    font-size: 12.6px; /* Reduzido em 10% de 14px */
+}
+
+.item .rating i {
+    color: #FFD700; /* Cor da estrela amarela */
+    margin-right: 4.5px; /* Reduzido em 10% de 5px */
+}
+
+/* Estilos para o logo */
+.logo {
+    height: 45px; /* Reduzido em 10% de 50px */
+    margin-right: 13.5px; /* Reduzido em 10% de 15px */
+    vertical-align: middle; /* Alinha verticalmente ao centro do header */
+    filter: invert();
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 1.35em; /* Reduzido em 10% de 1.5em */
+    margin: 0;
+}
+
+nav {
+    font-size: 10.8px; /* Reduzido em 10% de 12px */
+}
+
+/* Estilos para o botão de tema */
+.theme-toggle {
+    cursor: pointer;
+    font-size: 21.6px; /* Reduzido em 10% de 24px */
+    color: #fff; /* Cor padrão para o ícone */
+    margin-left: 13.5px; /* Reduzido em 10% de 15px */
+}
+
+.theme-toggle:hover {
+    transform: scale(1.08); /* Reduzido em 10% de 1.2 */
+    transition: transform 0.2s;
+}
+
+/* Estilo para o título */
+.bear {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em; /* Reduzido em 10% de 2em */
+    margin-right: 18px; /* Reduzido em 10% de 20px */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Estilo para a navegação e o rodapé */
+nav a,
+footer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Ajustes adicionais para o nav */
+nav a {
+    font-size: 12.15px; /* Reduzido em 10% de 13.5px */
+    padding: 9px 13.5px; /* Reduzido em 10% de 10px 15px */
+}
+
+.logo-link, .bear-link {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor original do texto */
+    cursor: pointer;
+}
+
+/* Se necessário, ajuste para remover o sublinhado do texto */
+.bear-link:hover, .logo-link:hover {
+    text-decoration: none;
+}

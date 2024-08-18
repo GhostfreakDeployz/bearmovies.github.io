@@ -1,0 +1,596 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Creepster&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Lobster&family=Montserrat+Subrayada&family=New+Amsterdam&family=Orbitron:wght@400..900&family=Smokum&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+</style>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Bare_Bear-removebg-preview(1).png" type="image/x-icon">
+    
+    <title>Bear Movies</title>
+    <link rel="stylesheet" href="styles.css">
+       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="Bare_Bear-removebg-preview(1).png" alt="Logo do Site" class="logo">
+        </a>
+        
+        <a href="index.html" class="bear-link">
+            <h1 class="bear">Bear Movies</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#guerra">Guerra</a></li>
+                <li><a href="#ficcao-cientifica">Ficção Científica</a></li>
+                <li><a href="#cultura-pop">Cultura Pop</a></li>
+                <li><a href="#faroeste">Faroeste</a></li>
+                <li><a href="#drama-crime">Drama / Crime</a></li>
+                <li><a href="#acao">Ação</a></li>
+                <li><a href="#horror-suspense">Horror / Suspense</a></li>
+                <li><a href="#animacao-fantasia">Animação / Fantasia</a></li>
+                <li><a href="#biografia">Biografia / Histórias Reais</a></li>
+                <li><a href="#comedia">Comédia / Mistura de Gêneros</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar filme..." oninput="searchMovie()">
+        </div>
+        <div id="theme-toggle" class="theme-toggle">
+            <span class="material-icons" onclick="toggleTheme()">brightness_5</span>
+        </div>
+        
+        
+    </header>
+
+    <div class="placeholder"></div>
+
+    <main>
+        
+        <section id="guerra" class="movie-section">
+            <h2>Guerra</h2>
+            <div class="items">
+                <div class="item" data-title="Bastardos Inglórios" data-year="2009" data-synopsis="Durante a Segunda Guerra Mundial, um grupo de soldados judeus-americanos, conhecidos como 'Os Bastardos', tem a missão de espalhar o terror entre o Terceiro Reich, enquanto uma jovem judia busca vingança contra os nazistas." data-rating="8.3" data-image="https://br.web.img2.acsta.net/medias/nmedia/18/90/43/36/20096333.jpg" data-trailer="https://www.youtube.com/embed/KnrRy6kSFF0">
+                    <img src="https://br.web.img2.acsta.net/medias/nmedia/18/90/43/36/20096333.jpg" alt="Bastardos Inglórios">
+                    <h3>Bastardos Inglórios (2009)</h3>
+                    <p><strong>Sinopse:</strong> Durante a Segunda Guerra Mundial, um grupo de soldados judeus-americanos, conhecidos como "Os Bastardos", tem a missão de espalhar o terror entre o Terceiro Reich, enquanto uma jovem judia busca vingança contra os nazistas.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.3/10</p>
+                </div>
+                <div class="item" data-title="Corações de Ferro" data-year="2014" data-synopsis="No final da Segunda Guerra Mundial, um grupo de soldados americanos é liderado por um sargento endurecido, que deve conduzir sua equipe através de uma série de batalhas intensas e dolorosas." data-rating="7.6" data-image="https://br.web.img3.acsta.net/pictures/14/10/28/21/28/104479.jpg" data-trailer="https://www.youtube.com/watch?v=OoKSKzqpPy4">
+                    <img src="https://br.web.img3.acsta.net/pictures/14/10/28/21/28/104479.jpg" alt="Corações de Ferro">
+                    <h3>Corações de Ferro (2014)</h3>
+                    <p><strong>Sinopse:</strong> No final da Segunda Guerra Mundial, um grupo de soldados americanos é liderado por um sargento endurecido, que deve conduzir sua equipe através de uma série de batalhas intensas e dolorosas.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.6/10</p>
+                </div>
+                <div class="item" data-title="Até o Último Homem" data-year="2016" data-synopsis="Baseado em uma história real, o filme segue um médico do exército que se recusa a portar armas durante a Segunda Guerra Mundial e se destaca por salvar muitos soldados na batalha de Okinawa." data-rating="8.1" data-image="https://m.media-amazon.com/images/S/pv-target-images/89c535821a63c47ff67af58a4de867cf724f70de9178af873dd79d1dee5cf1c5.jpg" data-trailer="https://www.youtube.com/watch?v=xo_7GA4Y-AU">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/89c535821a63c47ff67af58a4de867cf724f70de9178af873dd79d1dee5cf1c5.jpg" alt="Até o Último Homem">
+                    <h3>Até o Último Homem (2016)</h3>
+                    <p><strong>Sinopse:</strong> Baseado em uma história real, o filme segue um médico do exército que se recusa a portar armas durante a Segunda Guerra Mundial e se destaca por salvar muitos soldados na batalha de Okinawa.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.1/10</p>
+                </div>
+                <div class="item" data-title="O Resgate do Soldado Ryan" data-year="1998" data-synopsis="Durante a Segunda Guerra Mundial, um grupo de soldados é enviado para encontrar e trazer de volta para casa um paracaidista cujos irmãos foram mortos em combate." data-rating="8.6" data-image="https://upload.wikimedia.org/wikipedia/pt/a/ac/Saving_Private_Ryan_poster.jpg" data-trailer="https://www.youtube.com/watch?v=dcz1Tvsx_f4">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/a/ac/Saving_Private_Ryan_poster.jpg" alt="O Resgate do Soldado Ryan">
+                    <h3>O Resgate do Soldado Ryan (1998)</h3>
+                    <p><strong>Sinopse:</strong> Durante a Segunda Guerra Mundial, um grupo de soldados é enviado para encontrar e trazer de volta para casa um paracaidista cujos irmãos foram mortos em combate.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.6/10</p>
+                </div>
+                <div class="item" data-title="A Lista de Schindler" data-year="1993" data-synopsis="A história real de Oskar Schindler, um empresário alemão que salvou mais de mil judeus durante o Holocausto ao empregá-los em suas fábricas." data-rating="8.9" data-image="https://br.web.img2.acsta.net/pictures/19/04/10/19/44/2904073.jpg" data-trailer="https://www.youtube.com/watch?v=RQfPCRUz6lw">
+                    <img src="https://br.web.img2.acsta.net/pictures/19/04/10/19/44/2904073.jpg" alt="A Lista de Schindler">
+                    <h3>A Lista de Schindler (1993)</h3>
+                    <p><strong>Sinopse:</strong> A história real de Oskar Schindler, um empresário alemão que salvou mais de mil judeus durante o Holocausto ao empregá-los em suas fábricas.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.9/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ficcao-cientifica" class="movie-section">
+            <h2>Ficção Científica</h2>
+            <div class="items">
+                <div class="item" data-title="2001: A Space Odyssey" data-year="1968" data-synopsis="Uma odisseia que explora a evolução da humanidade, a inteligência artificial e a vida extraterrestre, através de uma jornada espacial com a nave Discovery One e o computador HAL 9000." data-rating="8.3" data-image="https://m.media-amazon.com/images/I/61zLkd00iuL._AC_UF1000,1000_QL80_.jpg" data-trailer="https://www.youtube.com/watch?v=kR2r-A9H3Kg">
+                    <img src="https://m.media-amazon.com/images/I/61zLkd00iuL._AC_UF1000,1000_QL80_.jpg" alt="2001: A Space Odyssey">
+                    <h3>2001: A Space Odyssey (1968)</h3>
+                    <p><strong>Sinopse:</strong> Uma odisseia que explora a evolução da humanidade, a inteligência artificial e a vida extraterrestre, através de uma jornada espacial com a nave Discovery One e o computador HAL 9000.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.3/10</p>
+                </div>
+                <div class="item" data-title="Blade Runner" data-year="1982" data-synopsis="Em um futuro distópico, um policial especializado em caçar replicantes é chamado para retirar um grupo de replicantes que voltou à Terra em busca de prolongar sua vida." data-rating="8.1" data-image="https://br.web.img3.acsta.net/medias/nmedia/18/91/15/13/20132048.jpg" data-trailer="https://www.youtube.com/watch?v=eogpIG53Cis">
+                    <img src="https://br.web.img3.acsta.net/medias/nmedia/18/91/15/13/20132048.jpg" alt="Blade Runner">
+                    <h3>Blade Runner (1982)</h3>
+                    <p><strong>Sinopse:</strong> Em um futuro distópico, um policial especializado em caçar replicantes é chamado para retirar um grupo de replicantes que voltou à Terra em busca de prolongar sua vida.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.1/10</p>
+                </div>
+                <div class="item" data-title="Matrix" data-year="1999" data-synopsis="Um hacker descobre que a realidade que conhece é uma simulação criada por máquinas que dominam o mundo, e se une a um grupo de rebeldes para lutar contra elas." data-rating="8.7" data-image="https://img.elo7.com.br/product/zoom/26799EE/big-poster-filme-matrix-lo01-tamanho-90x60-cm-poster.jpg" data-trailer="https://www.youtube.com/watch?v=kYzz0FSgpSU">
+                    <img src="https://img.elo7.com.br/product/zoom/26799EE/big-poster-filme-matrix-lo01-tamanho-90x60-cm-poster.jpg" alt="Matrix">
+                    <h3>Matrix (1999)</h3>
+                    <p><strong>Sinopse:</strong> Um hacker descobre que a realidade que conhece é uma simulação criada por máquinas que dominam o mundo, e se une a um grupo de rebeldes para lutar contra elas.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.7/10</p>
+                </div>
+                <div class="item" data-title="Interstellar" data-year="2014" data-synopsis="Um grupo de exploradores viaja através de um buraco de minhoca em busca de um novo lar para a humanidade, enfrentando desafios espaciais e emocionais ao longo do caminho." data-rating="8.6" data-image="https://m.media-amazon.com/images/I/A1JVqNMI7UL._AC_UF1000,1000_QL80_.jpg" data-trailer="https://www.youtube.com/watch?v=i6avfCqKcQo">
+                    <img src="https://m.media-amazon.com/images/I/A1JVqNMI7UL._AC_UF1000,1000_QL80_.jpg" alt="Interstellar">
+                    <h3>Interstellar (2014)</h3>
+                    <p><strong>Sinopse:</strong> Um grupo de exploradores viaja através de um buraco de minhoca em busca de um novo lar para a humanidade, enfrentando desafios espaciais e emocionais ao longo do caminho.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.6/10</p>
+                </div>
+                <div class="item" data-title="Independence Day" data-year="1996" data-synopsis="A Terra enfrenta uma invasão alienígena em massa, e um grupo de heróis deve se unir para lutar contra os invasores e salvar o planeta." data-rating="7.0" data-image="https://images6.fanpop.com/image/photos/40100000/Independence-Day-Resurgence-Posters-movie-trailers-40124744-744-1052.jpg" data-trailer="https://www.youtube.com/watch?v=B1E7h3SeMDk">
+                    <img src="https://images6.fanpop.com/image/photos/40100000/Independence-Day-Resurgence-Posters-movie-trailers-40124744-744-1052.jpg" alt="Independence Day">
+                    <h3>Independence Day (1996)</h3>
+                    <p><strong>Sinopse:</strong> A Terra enfrenta uma invasão alienígena em massa, e um grupo de heróis deve se unir para lutar contra os invasores e salvar o planeta.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.0/10</p>
+                </div>
+                <div class="item" data-title="Real Steel" data-year="2011" data-synopsis="Em um futuro próximo, boxeadores robóticos competem em ringues, e um pai e seu filho tentam ganhar uma competição de robôs enquanto enfrentam desafios pessoais." data-rating="7.1" data-image="https://i.pinimg.com/736x/4e/74/0d/4e740d26fc6528778f112423893578a7.jpg" data-trailer="https://www.youtube.com/watch?v=SwfmV3nn6QA">
+                    <img src="https://i.pinimg.com/736x/4e/74/0d/4e740d26fc6528778f112423893578a7.jpg" alt="Real Steel (2011)">
+                    <h3>Real Steel (2011)</h3>
+                    <p><strong>Sinopse:</strong> Em um futuro próximo, boxeadores robóticos competem em ringues, e um pai e seu filho tentam ganhar uma competição de robôs enquanto enfrentam desafios pessoais.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.1/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultura-pop" class="movie-section">
+            <h2>Cultura Pop</h2>
+            <div class="items">
+                <div class="item" data-title="Star Wars" data-year="1977" data-synopsis="Um jovem fazendeiro se une a um grupo de rebeldes para lutar contra o império maligno e restaurar a liberdade na galáxia." data-rating="8.6" data-image="https://play-lh.googleusercontent.com/urFmNCsqsU93qEKDmhrs60zl2rDki-XzdQpms01-P64kMX3VkGO0c7Sf2ira2mzbgwmM" data-trailer="https://www.youtube.com/watch?v=XHk5kCIiGoM">
+                    <img src="https://play-lh.googleusercontent.com/urFmNCsqsU93qEKDmhrs60zl2rDki-XzdQpms01-P64kMX3VkGO0c7Sf2ira2mzbgwmM" alt="Star Wars">
+                    <h3>Star Wars (1977)</h3>
+                    <p><strong>Sinopse:</strong> Um jovem fazendeiro se une a um grupo de rebeldes para lutar contra o império maligno e restaurar a liberdade na galáxia.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong>8.6/10</p>
+                </div>
+        
+                <div class="item" data-title="Senhor dos Anéis: A Sociedade do Anel" data-year="2001" data-synopsis="O jovem hobbit Frodo e seus amigos formam uma sociedade para destruir um anel poderoso que pode trazer a ruína ao mundo. A jornada leva-os por terras perigosas e inimigos implacáveis." data-rating="8.8" data-image="https://br.web.img3.acsta.net/medias/nmedia/18/92/91/32/20224832.jpg" data-trailer="https://www.youtube.com/watch?v=0i86oM1nHjM">
+                    <img src="https://br.web.img3.acsta.net/medias/nmedia/18/92/91/32/20224832.jpg" alt="Senhor dos Anéis: A Sociedade do Anel (2001)">
+                    <h3>Senhor dos Anéis: A Sociedade do Anel (2001)</h3>
+                    <p><strong>Sinopse:</strong> O jovem hobbit Frodo e seus amigos formam uma sociedade para destruir um anel poderoso que pode trazer a ruína ao mundo. A jornada leva-os por terras perigosas e inimigos implacáveis.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.8/10</p>
+                </div>
+        
+                <div class="item" data-title="Pulp Fiction" data-year="1994" data-synopsis="A narrativa não linear do filme entrelaça várias histórias de criminosos em Los Angeles, com diálogos marcantes e momentos memoráveis." data-rating="8.9" data-image="https://upload.wikimedia.org/wikipedia/pt/8/82/Pulp_Fiction_cover.jpg" data-trailer="https://www.youtube.com/watch?v=s7EdQ4FqbhY">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/8/82/Pulp_Fiction_cover.jpg" alt="Pulp Fiction">
+                    <h3>Pulp Fiction (1994)</h3>
+                    <p><strong>Sinopse:</strong> A narrativa não linear do filme entrelaça várias histórias de criminosos em Los Angeles, com diálogos marcantes e momentos memoráveis.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.9/10</p>
+                </div>
+        
+                <div class="item" data-title="Clube da Luta" data-year="1999" data-synopsis="Um homem insatisfeito com a vida funda um clube de luta secreto que rapidamente evolui para um movimento subversivo e anárquico." data-rating="8.8" data-image="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/95/96/20122166.jpg" data-trailer="https://www.youtube.com/watch?v=lJ5281THeKQ">
+                    <img src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/95/96/20122166.jpg" alt="Clube da Luta">
+                    <h3>Clube da Luta (1999)</h3>
+                    <p><strong>Sinopse:</strong> Um homem insatisfeito com a vida funda um clube de luta secreto que rapidamente evolui para um movimento subversivo e anárquico.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.8/10</p>
+                </div>
+        
+                <div class="item" data-title="Donnie Darko" data-year="2001" data-synopsis="Um adolescente perturbado começa a ter visões de um homem com uma máscara de coelho e descobre uma trama que pode mudar o destino do mundo." data-rating="8.0" data-image="https://upload.wikimedia.org/wikipedia/pt/thumb/5/58/Donnie_Darko.jpg/220px-Donnie_Darko.jpg" data-trailer="https://www.youtube.com/watch?v=bzLn8sYeM9o">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/5/58/Donnie_Darko.jpg/220px-Donnie_Darko.jpg" alt="Donnie Darko">
+                    <h3>Donnie Darko (2001)</h3>
+                    <p><strong>Sinopse:</strong> Um adolescente perturbado começa a ter visões de um homem com uma máscara de coelho e descobre uma trama que pode mudar o destino do mundo.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.0/10</p>
+                </div>
+        
+                <div class="item" data-title="O Corvo" data-year="1994" data-synopsis="Um músico ressuscita para vingar sua própria morte e a de sua noiva, enfrentando uma gangue violenta e liderada por um vilão cruel." data-rating="7.5" data-image="https://media.fstatic.com/Xr6Or3-xHq-HyXq9OJNLByOQsnI=/322x478/smart/filters:format(webp)/media/movies/covers/2018/08/57f1bebf8a916f748044a3b58afb4124.jpg" data-trailer="https://www.youtube.com/watch?v=N5uPZ7ocsqA">
+                    <img src="https://media.fstatic.com/Xr6Or3-xHq-HyXq9OJNLByOQsnI=/322x478/smart/filters:format(webp)/media/movies/covers/2018/08/57f1bebf8a916f748044a3b58afb4124.jpg" alt="O Corvo">
+                    <h3>O Corvo (1994)</h3>
+                    <p><strong>Sinopse:</strong> Um músico ressuscita para vingar sua própria morte e a de sua noiva, enfrentando uma gangue violenta e liderada por um vilão cruel.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.5/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faroeste" class="movie-section">
+            <h2>Faroeste</h2>
+            <div class="items">
+                <div class="item" data-title="7 Homens e 1 Destino" data-year="1960" data-synopsis="Sete pistoleiros são contratados para proteger uma vila mexicana dos ataques de bandidos que querem tomar a cidade." data-rating="8.0" data-image="https://m.media-amazon.com/images/S/pv-target-images/d4027c7d509f325e0e17f2a24105dff0ae62b8bea7bbb9cb199043894f7f0852.jpg" data-trailer="https://www.youtube.com/watch?v=coLnpX5FUnU">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/d4027c7d509f325e0e17f2a24105dff0ae62b8bea7bbb9cb199043894f7f0852.jpg" alt="7 Homens e 1 Destino">
+                    <h3>7 Homens e 1 Destino (1960)</h3>
+                    <p><strong>Sinopse:</strong> Sete pistoleiros são contratados para proteger uma vila mexicana dos ataques de bandidos que querem tomar a cidade.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.0/10</p>
+                </div>
+                <div class="item" data-title="Por 1 Punhado de Dólares" data-year="1964" data-synopsis="Um pistoleiro solitário se infiltra em uma cidade dividida entre dois grupos rivais e usa seu engenho para eliminar ambos." data-rating="8.0" data-image="https://m.media-amazon.com/images/S/pv-target-images/78ed36f260f4e12873205df77cc21c5eb283c7ec5c89b5ccc10e3c970bd14b1f.jpg" data-trailer="https://www.youtube.com/watch?v=bNt9NcLteoU">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/78ed36f260f4e12873205df77cc21c5eb283c7ec5c89b5ccc10e3c970bd14b1f.jpg" alt="Por 1 Punhado de Dólares">
+                    <h3>Por 1 Punhado de Dólares (1964)</h3>
+                    <p><strong>Sinopse:</strong> Um pistoleiro solitário se infiltra em uma cidade dividida entre dois grupos rivais e usa seu engenho para eliminar ambos.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.0/10</p>
+                </div>
+                <div class="item" data-title="Django Livre" data-year="2012" data-synopsis="Um escravo liberto se torna caçador de recompensas e busca resgatar sua esposa das garras de um proprietário de escravos cruel." data-rating="8.4" data-image="https://upload.wikimedia.org/wikipedia/pt/8/8b/Django_Unchained_Poster.jpg" data-trailer="https://www.youtube.com/watch?v=0fUCuvNlOCg">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/8/8b/Django_Unchained_Poster.jpg" alt="Django Livre">
+                    <h3>Django Livre (2012)</h3>
+                    <p><strong>Sinopse:</strong> Um escravo liberto se torna caçador de recompensas e busca resgatar sua esposa das garras de um proprietário de escravos cruel.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.4/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="drama-crime" class="movie-section">
+            <h2>Drama / Crime</h2>
+            <div class="items">
+                <div class="item" data-title="O Poderoso Chefão" data-year="1972" data-synopsis="A história da família mafiosa Corleone e o complicado processo de sucessão do patriarca Don Vito Corleone." data-rating="9.2" data-image="https://www.cineplayers.com/sites/default/files/posters/2020/08/god.jpg" data-trailer="https://www.youtube.com/watch?v=UaVTIH8mujA">
+                    <img src="https://www.cineplayers.com/sites/default/files/posters/2020/08/god.jpg" alt="O Poderoso Chefão">
+                    <h3>O Poderoso Chefão (1972)</h3>
+                    <p><strong>Sinopse:</strong> A história da família mafiosa Corleone e o complicado processo de sucessão do patriarca Don Vito Corleone.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 9.2/10</p>
+                </div>
+                <div class="item" data-title="O Regresso" data-year="2015" data-synopsis="Após ser atacado por um urso e abandonado por seus companheiros, um caçador busca vingança enquanto luta para sobreviver na natureza selvagem." data-rating="8.0" data-image="https://br.web.img3.acsta.net/pictures/15/12/17/18/20/090910.jpg" data-trailer="https://www.youtube.com/watch?v=WVJKIQC0hSE">
+                    <img src="https://br.web.img3.acsta.net/pictures/15/12/17/18/20/090910.jpg" alt="O Regresso">
+                    <h3>O Regresso (2015)</h3>
+                    <p><strong>Sinopse:</strong> Após ser atacado por um urso e abandonado por seus companheiros, um caçador busca vingança enquanto luta para sobreviver na natureza selvagem.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.0/10</p>
+                </div>
+                <div class="item" data-title="Taxi Driver" data-year="1976" data-synopsis="Um veterano de guerra desajustado e solitário torna-se taxista em Nova York, onde sua crescente paranoia o leva a atos de violência." data-rating="8.3" data-image="https://i.pinimg.com/originals/ed/75/66/ed7566986f170e8cdec09fd2d189530c.jpg" data-trailer="https://www.youtube.com/watch?v=T5IligQP7Fo">
+                    <img src="https://i.pinimg.com/originals/ed/75/66/ed7566986f170e8cdec09fd2d189530c.jpg" alt="Taxi Driver">
+                    <h3>Taxi Driver (1976)</h3>
+                    <p><strong>Sinopse:</strong> Um veterano de guerra desajustado e solitário torna-se taxista em Nova York, onde sua crescente paranoia o leva a atos de violência.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.3/10</p>
+                </div>
+                <div class="item" data-title="Coringa" data-year="2019" data-synopsis="A origem do icônico vilão Coringa é explorada, revelando sua transformação de um comediante fracassado em um criminoso perturbador." data-rating="8.4" data-image="https://upload.wikimedia.org/wikipedia/pt/6/63/Joker_%282019%29.jpg" data-trailer="https://www.youtube.com/watch?v=_OKAwz2MsJs">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/6/63/Joker_%282019%29.jpg" alt="Coringa">
+                    <h3>Coringa (2019)</h3>
+                    <p><strong>Sinopse:</strong> A origem do icônico vilão Coringa é explorada, revelando sua transformação de um comediante fracassado em um criminoso perturbador.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.4/10</p>
+                </div>
+                <div class="item" data-title="Os Suspeitos" data-year="2013" data-synopsis="Após o desaparecimento de suas filhas, um pai desesperado toma medidas extremas para encontrar a responsável pelo crime." data-rating="8.1" data-image="https://br.web.img3.acsta.net/pictures/210/509/21050952_20131018203347915.jpg" data-trailer="https://www.youtube.com/watch?v=1GwPisQUuL4">
+                    <img src="https://br.web.img3.acsta.net/pictures/210/509/21050952_20131018203347915.jpg" alt="Os Suspeitos">
+                    <h3>Os Suspeitos (2013)</h3>
+                    <p><strong>Sinopse:</strong> Após o desaparecimento de suas filhas, um pai desesperado toma medidas extremas para encontrar a responsável pelo crime.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.1/10</p>
+                </div>
+                <div class="item" data-title="Sempre ao Seu Lado" data-year="2009" data-synopsis="A história comovente de um cão leal chamado Hachiko, que espera por seu dono em uma estação de trem todos os dias, mesmo após a morte do dono." data-rating="8.1" data-image="https://br.web.img3.acsta.net/medias/nmedia/18/87/30/97/20028681.jpg" data-trailer="https://www.youtube.com/watch?v=UFY8vW5IedY">
+                    <img src="https://br.web.img3.acsta.net/medias/nmedia/18/87/30/97/20028681.jpg" alt="Sempre ao Seu Lado">
+                    <h3>Sempre ao Seu Lado (2009)</h3>
+                    <p><strong>Sinopse:</strong> A história comovente de um cão leal chamado Hachiko, que espera por seu dono em uma estação de trem todos os dias, mesmo após a morte do dono.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.1/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="acao" class="movie-section">
+            <h2>Ação</h2>
+            <div class="items">
+                <div class="item" data-title="Logan" data-year="2017" data-synopsis="Wolverine está envelhecendo e desiludido, vivendo em um futuro distópico enquanto tenta proteger uma jovem mutante com habilidades semelhantes às suas." data-rating="8.1" data-image="https://play-lh.googleusercontent.com/SGXYIDYybGO48vszP1xnTmYAXb1eez2ob3nmsmJAeNEfShgKkrGvb-eebU1mGiG5zTBHeu74I6lIW2qTwYw" data-trailer="https://www.youtube.com/watch?v=Div0iP65aZo">
+                    <img src="https://play-lh.googleusercontent.com/SGXYIDYybGO48vszP1xnTmYAXb1eez2ob3nmsmJAeNEfShgKkrGvb-eebU1mGiG5zTBHeu74I6lIW2qTwYw" alt="Logan">
+                    <h3>Logan (2017)</h3>
+                    <p><strong>Sinopse:</strong> Wolverine está envelhecendo e desiludido, vivendo em um futuro distópico enquanto tenta proteger uma jovem mutante com habilidades semelhantes às suas.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.1/10</p>
+                </div>
+                <div class="item" data-title="O Gladiador" data-year="2000" data-synopsis="Um general romano é traído e se torna um gladiador, buscando vingança contra o imperador que destruiu sua vida." data-rating="8.5" data-image="https://upload.wikimedia.org/wikipedia/pt/4/44/GladiadorPoster.jpg" data-trailer="https://www.youtube.com/watch?v=P5ieIbInFpg">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/4/44/GladiadorPoster.jpg" alt="O Gladiador">
+                    <h3>O Gladiador (2000)</h3>
+                    <p><strong>Sinopse:</strong> Um general romano é traído e se torna um gladiador, buscando vingança contra o imperador que destruiu sua vida.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.5/10</p>
+                </div>
+                <div class="item" data-title="Top Gun" data-year="1986" data-synopsis="Um piloto de caça se destaca em uma escola de elite da Marinha dos EUA e deve enfrentar suas próprias inseguranças e rivais." data-rating="6.9" data-image="https://www.europanet.com.br/upload/id_produto/107___/107372g.jpg" data-trailer="https://www.youtube.com/watch?v=xa_z57UatDY">
+                    <img src="https://www.europanet.com.br/upload/id_produto/107___/107372g.jpg" alt="Top Gun">
+                    <h3>Top Gun (1986)</h3>
+                    <p><strong>Sinopse:</strong> Um piloto de caça se destaca em uma escola de elite da Marinha dos EUA e deve enfrentar suas próprias inseguranças e rivais.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 6.9/10</p>
+                </div>
+                <div class="item" data-title="Drive" data-year="2011" data-synopsis="Um motorista de fuga com habilidades excepcionais se vê envolvido em uma série de eventos violentos enquanto tenta proteger aqueles que ama." data-rating="7.8" data-image="https://upload.wikimedia.org/wikipedia/pt/e/e6/Drive-P%C3%B4ster.jpg" data-trailer="https://www.youtube.com/watch?v=KBiOF3y1W0Y">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/e/e6/Drive-P%C3%B4ster.jpg" alt="Drive">
+                    <h3>Drive (2011)</h3>
+                    <p><strong>Sinopse:</strong> Um motorista de fuga com habilidades excepcionais se vê envolvido em uma série de eventos violentos enquanto tenta proteger aqueles que ama.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.8/10</p>
+                </div>
+                <div class="item" data-title="Doutrinador" data-year="2018" data-synopsis="Um vigilante combate a corrupção e o crime organizado, buscando justiça em uma sociedade que está à beira do colapso." data-rating="6.5" data-image="https://br.web.img3.acsta.net/pictures/18/07/20/22/32/1260113.jpg" data-trailer="https://www.youtube.com/watch?v=vhQJvL159Mk">
+                    <img src="https://br.web.img3.acsta.net/pictures/18/07/20/22/32/1260113.jpg" alt="Doutrinador">
+                    <h3>Doutrinador (2018)</h3>
+                    <p><strong>Sinopse:</strong> Um vigilante combate a corrupção e o crime organizado, buscando justiça em uma sociedade que está à beira do colapso.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 6.5/10</p>
+                </div>
+                <div class="item" data-title="Motoqueiro Fantasma" data-year="2007" data-synopsis="Johnny Blaze, um motociclista que vende sua alma para salvar seu pai, se torna o Motoqueiro Fantasma, um vigilante sobrenatural com habilidades infernais. Ele busca reverter sua maldição e combater o mal." data-rating="5.2" data-image="https://br.web.img3.acsta.net/medias/nmedia/18/90/84/14/20115747.jpg" data-trailer="https://www.youtube.com/watch?v=nu6R7ypaz5g">
+                    <img src="https://br.web.img3.acsta.net/medias/nmedia/18/90/84/14/20115747.jpg" alt="Motoqueiro Fantasma (2007)">
+                    <h3>Motoqueiro Fantasma (2007)</h3>
+                    <p><strong>Sinopse:</strong> Johnny Blaze, um motociclista que vende sua alma para salvar seu pai, se torna o Motoqueiro Fantasma, um vigilante sobrenatural com habilidades infernais. Ele busca reverter sua maldição e combater o mal.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 5.2/10</p>
+                </div>
+            </div>
+        </section>        
+
+        <section id="horror-suspense" class="movie-section">
+            <h2>Horror / Suspense</h2>
+            <div class="items">
+                <div class="item" data-title="Constantine" data-year="2005" data-synopsis="Um detetive paranormal busca redimir-se de seu passado ao enfrentar forças demoníacas e salvar o mundo dos infernais planos." data-rating="7.0" data-image="https://upload.wikimedia.org/wikipedia/pt/4/49/Constantineposter.jpg" data-trailer="https://www.youtube.com/watch?v=DEa508Xmmio">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/4/49/Constantineposter.jpg" alt="Constantine">
+                    <h3>Constantine (2005)</h3>
+                    <p><strong>Sinopse:</strong> Um detetive paranormal busca redimir-se de seu passado ao enfrentar forças demoníacas e salvar o mundo dos infernais planos.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.0/10</p>
+                </div>
+                <div class="item" data-title="O Último Portal" data-year="1999" data-synopsis="Um detetive investiga uma série de assassinatos macabros que parecem estar relacionados a um portal para outra dimensão." data-rating="6.7" data-image="https://m.media-amazon.com/images/S/pv-target-images/e9610afd08e9a136c0051fc2b6fd3c04facb6b318512e9e9dac904a55c8da645.jpg" data-trailer="https://www.youtube.com/watch?v=MSK5AOEp-3k">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/e9610afd08e9a136c0051fc2b6fd3c04facb6b318512e9e9dac904a55c8da645.jpg" alt="O Último Portal">
+                    <h3>O Último Portal (1999)</h3>
+                    <p><strong>Sinopse:</strong> Um detetive investiga uma série de assassinatos macabros que parecem estar relacionados a um portal para outra dimensão.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 6.7/10</p>
+                </div>
+                <div class="item" data-title="O Mistério de Silver Lake" data-year="2018" data-synopsis="Um homem se envolve em um mistério quando uma jovem desaparece e ele descobre um enigma escondido em sua vizinhança." data-rating="6.5" data-image="https://br.web.img3.acsta.net/pictures/18/04/10/17/25/5495302.jpg" data-trailer="https://www.youtube.com/watch?v=mwgUesU1pz4">
+                    <img src="https://br.web.img3.acsta.net/pictures/18/04/10/17/25/5495302.jpg" alt="O Mistério de Silver Lake">
+                    <h3>O Mistério de Silver Lake (2018)</h3>
+                    <p><strong>Sinopse:</strong> Um homem se envolve em um mistério quando uma jovem desaparece e ele descobre um enigma escondido em sua vizinhança.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 6.5/10</p>
+                </div>
+                <div class="item" data-title="Onde os Fracos Não Têm Vez" data-year="2007" data-synopsis="Um assassino implacável persegue um caçador de recompensas e um homem comum, em um thriller psicológico ambientado no Texas." data-rating="8.1" data-image="https://br.web.img3.acsta.net/pictures/210/079/21007978_20130523175557996.jpg" data-trailer="https://www.youtube.com/watch?v=38A__WT3-o0">
+                    <img src="https://br.web.img3.acsta.net/pictures/210/079/21007978_20130523175557996.jpg" alt="Onde os Fracos Não Têm Vez">
+                    <h3>Onde os Fracos Não Têm Vez (2007)</h3>
+                    <p><strong>Sinopse:</strong> Um assassino implacável persegue um caçador de recompensas e um homem comum, em um thriller psicológico ambientado no Texas.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.1/10</p>
+                </div>
+                <div class="item" data-title="Halloween" data-year="1978" data-synopsis="Um clássico do terror onde Michael Myers, um assassino mascarado, escapa do hospital psiquiátrico e retorna à sua cidade natal para aterrorizar uma jovem babá e seus amigos." data-rating="8.0" data-image="https://upload.wikimedia.org/wikipedia/pt/8/87/Halloween_cover.jpg" data-trailer="https://www.youtube.com/watch?v=oVgtguYmNBg">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/8/87/Halloween_cover.jpg" alt="Halloween (1978)">
+                    <h3>Halloween (1978)</h3>
+                    <p><strong>Sinopse:</strong> Um clássico do terror onde Michael Myers, um assassino mascarado, escapa do hospital psiquiátrico e retorna à sua cidade natal para aterrorizar uma jovem babá e seus amigos.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.0/10</p>
+                </div>
+                <div class="item" data-title="A Entidade" data-year="2012" data-synopsis="Um escritor descobre uma caixa de fitas caseiras que revelam a presença de uma entidade sobrenatural na casa onde sua família foi assassinada." data-rating="6.8" data-image="https://upload.wikimedia.org/wikipedia/pt/4/44/Sinister.jpg" data-trailer="https://www.youtube.com/watch?v=pGaEXB3zW3M">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/4/44/Sinister.jpg" alt="A Entidade (2012)">
+                    <h3>A Entidade (2012)</h3>
+                    <p><strong>Sinopse:</strong> Um escritor descobre uma caixa de fitas caseiras que revelam a presença de uma entidade sobrenatural na casa onde sua família foi assassinada.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 6.8/10</p>
+                </div>
+                <div class="item" data-title="Albergue" data-year="2005" data-synopsis="Um grupo de jovens turistas americanos visita um albergue na Eslováquia e acaba sendo capturado e torturado por uma organização secreta que oferece experiências extremas aos seus clientes." data-rating="5.9" data-image="https://br.web.img3.acsta.net/pictures/14/10/07/20/11/210244.jpg" data-trailer="https://www.youtube.com/watch?v=R0ShE0EbcCA">
+                    <img src="https://br.web.img3.acsta.net/pictures/14/10/07/20/11/210244.jpg" alt="Albergue (2005)">
+                    <h3>Albergue (2005)</h3>
+                    <p><strong>Sinopse:</strong> Um grupo de jovens turistas americanos visita um albergue na Eslováquia e acaba sendo capturado e torturado por uma organização secreta que oferece experiências extremas aos seus clientes.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 5.9/10</p>
+                </div>
+                <div class="item" data-title="Fragmentado" data-year="2016" data-synopsis="Kevin possui 23 personalidades distintas e sequestra três adolescentes. As personalidades são exploradas à medida que as vítimas tentam escapar e a 24ª personalidade ameaça surgir." data-rating="7.3" data-image="https://br.web.img3.acsta.net/c_310_420/pictures/17/02/24/16/32/482058.jpg" data-trailer="https://www.youtube.com/watch?v=7l4SzfMstLE">
+                    <img src="https://br.web.img3.acsta.net/c_310_420/pictures/17/02/24/16/32/482058.jpg" alt="Fragmentado (2016)">
+                    <h3>Fragmentado (2016)</h3>
+                    <p><strong>Sinopse:</strong> Kevin possui 23 personalidades distintas e sequestra três adolescentes. As personalidades são exploradas à medida que as vítimas tentam escapar e a 24ª personalidade ameaça surgir.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.3/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="animacao-fantasia" class="movie-section">
+            <h2>Animação / Fantasia</h2>
+            <div class="items">
+                <div class="item" data-title="ParaNorman" data-year="2012" data-synopsis="Um jovem que pode ver e falar com fantasmas deve usar suas habilidades para salvar sua cidade de uma antiga maldição." data-rating="7.0" data-image="https://upload.wikimedia.org/wikipedia/pt/3/32/ParaNorman_poster.jpg" data-trailer="https://www.youtube.com/watch?v=hgwSpajMw3s">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/3/32/ParaNorman_poster.jpg" alt="ParaNorman">
+                    <h3>ParaNorman (2012)</h3>
+                    <p><strong>Sinopse:</strong> Um jovem que pode ver e falar com fantasmas deve usar suas habilidades para salvar sua cidade de uma antiga maldição.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.0/10</p>
+                </div>
+                <div class="item" data-title="Coraline" data-year="2009" data-synopsis="Uma menina encontra um portal para uma versão alternativa de sua vida, onde deve enfrentar um perigo terrível para salvar sua família." data-rating="7.7" data-image="https://m.media-amazon.com/images/I/81sf6HWzSdL._AC_UF1000,1000_QL80_.jpg" data-trailer="https://www.youtube.com/watch?v=m9bOpeuvNwY">
+                    <img src="https://m.media-amazon.com/images/I/81sf6HWzSdL._AC_UF1000,1000_QL80_.jpg" alt="Coraline">
+                    <h3>Coraline (2009)</h3>
+                    <p><strong>Sinopse:</strong> Uma menina encontra um portal para uma versão alternativa de sua vida, onde deve enfrentar um perigo terrível para salvar sua família.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.7/10</p>
+                </div>
+                <div class="item" data-title="Bob Cuspe: Nós Não Gostamos de Gente" data-year="2021" data-synopsis="Uma animação brasileira que segue as aventuras de Bob Cuspe, um personagem alternativo em um mundo repleto de figuras bizarras e situações caóticas." data-rating="6.8" data-image="https://br.web.img3.acsta.net/pictures/22/01/21/19/43/3629056.jpg" data-trailer="https://www.youtube.com/watch?v=sXi8hxSxexQ">
+                    <img src="https://br.web.img3.acsta.net/pictures/22/01/21/19/43/3629056.jpg" alt="Bob Cuspe: Nós Não Gostamos de Gente">
+                    <h3>Bob Cuspe: Nós Não Gostamos de Gente (2021)</h3>
+                    <p><strong>Sinopse:</strong> Uma animação brasileira que segue as aventuras de Bob Cuspe, um personagem alternativo em um mundo repleto de figuras bizarras e situações caóticas.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 6.8/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="biografia" class="movie-section">
+            <h2>Biografia / Histórias Reais</h2>
+            <div class="items">
+                <div class="item" data-title="Senhor das Armas" data-year="2005" data-synopsis="A vida de um comerciante de armas que se envolve no comércio ilegal e enfrenta questões morais e legais em um mundo turbulento." data-rating="7.6" data-image="https://br.web.img3.acsta.net/medias/nmedia/18/87/18/00/19872824.jpg" data-trailer="https://www.youtube.com/watch?v=2j4JgUKDM_k">
+                    <img src="https://br.web.img3.acsta.net/medias/nmedia/18/87/18/00/19872824.jpg" alt="Senhor das Armas">
+                    <h3>Senhor das Armas (2005)</h3>
+                    <p><strong>Sinopse:</strong> A vida de um comerciante de armas que se envolve no comércio ilegal e enfrenta questões morais e legais em um mundo turbulento.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.6/10</p>
+                </div>
+                <div class="item" data-title="Fome de Poder" data-year="2016" data-synopsis="A história de Ray Kroc, o homem que transformou o McDonald's em um dos maiores impérios alimentares do mundo." data-rating="7.2" data-image="https://br.web.img3.acsta.net/pictures/17/02/21/19/09/113794.jpg" data-trailer="https://www.youtube.com/watch?v=KTNdMDpvBH0">
+                    <img src="https://br.web.img3.acsta.net/pictures/17/02/21/19/09/113794.jpg" alt="Fome de Poder">
+                    <h3>Fome de Poder (2016)</h3>
+                    <p><strong>Sinopse:</strong> A história de Ray Kroc, o homem que transformou o McDonald's em um dos maiores impérios alimentares do mundo.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.2/10</p>
+                </div>
+                <div class="item" data-title="Forrest Gump - O Contador de Histórias" data-year="1994" data-synopsis="A vida extraordinária de Forrest Gump, um homem com QI abaixo da média que, inadvertidamente, se envolve em eventos históricos importantes." data-rating="8.8" data-image="https://m.media-amazon.com/images/S/pv-target-images/ee36e1b2c68685dc3d3c5815800e8628ba09223fb196acb83baaa885dea3c39c.jpg" data-trailer="https://www.youtube.com/watch?v=vDY_uZAaU7g">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/ee36e1b2c68685dc3d3c5815800e8628ba09223fb196acb83baaa885dea3c39c.jpg" alt="Forrest Gump - O Contador de Histórias">
+                    <h3>Forrest Gump - O Contador de Histórias (1994)</h3>
+                    <p><strong>Sinopse:</strong> A vida extraordinária de Forrest Gump, um homem com QI abaixo da média que, inadvertidamente, se envolve em eventos históricos importantes.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 8.8/10</p>
+                </div>
+                <div class="item" data-title="Assassino do Zodíaco" data-year="2007" data-synopsis="O filme segue a caçada ao notório assassino do zodíaco, que aterrorizou a Califórnia nos anos 60 e 70. O enredo é baseado em eventos reais e investiga as vidas dos envolvidos no caso." data-rating="7.7" data-image="https://m.media-amazon.com/images/S/pv-target-images/216b5f0a65e5e7e54915ede40b4f297f2db601e1c6756eb3ed50a274a3c83e80.jpg" data-trailer="https://www.youtube.com/watch?v=yNncHPl1UXg">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/216b5f0a65e5e7e54915ede40b4f297f2db601e1c6756eb3ed50a274a3c83e80.jpg" alt="Assassino do Zodíaco (2007)">
+                    <h3>Assassino do Zodíaco (2007)</h3>
+                    <p><strong>Sinopse:</strong> O filme segue a caçada ao notório assassino do zodíaco, que aterrorizou a Califórnia nos anos 60 e 70. O enredo é baseado em eventos reais e investiga as vidas dos envolvidos no caso.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.7/10</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="comedia" class="movie-section">
+            <h2>Comédia / Mistura de Gêneros</h2>
+            <div class="items">
+                <div class="item" data-title="É o Fim" data-year="2013" data-synopsis="Um grupo de amigos se reúne para uma festa enquanto o apocalipse acontece do lado de fora, levando a situações absurdas e hilárias." data-rating="6.6" data-image="https://br.web.img3.acsta.net/c_310_420/pictures/210/335/21033541_20130830224455231.jpg" data-trailer="https://www.youtube.com/watch?v=hlYqdH7RMyU">
+                    <img src="https://br.web.img3.acsta.net/c_310_420/pictures/210/335/21033541_20130830224455231.jpg" alt="É o Fim">
+                    <h3>É o Fim (2013)</h3>
+                    <p><strong>Sinopse:</strong> Um grupo de amigos se reúne para uma festa enquanto o apocalipse acontece do lado de fora, levando a situações absurdas e hilárias.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 6.6/10</p>
+                </div>
+                <div class="item" data-title="Era uma Vez em... Hollywood" data-year="2019" data-synopsis="Um ator de televisão e seu dublê enfrentam desafios enquanto tentam se ajustar às mudanças na indústria cinematográfica durante o fim da década de 1960." data-rating="7.9" data-image="https://artecult.com/wp-content/uploads/2019/08/Poster-Era-Uma-Vez-Em-Hollywood.jpg" data-trailer="https://www.youtube.com/watch?v=OYGUQmJlgiE">
+                    <img src="https://artecult.com/wp-content/uploads/2019/08/Poster-Era-Uma-Vez-Em-Hollywood.jpg" alt="Era uma Vez em... Hollywood">
+                    <h3>Era uma Vez em... Hollywood (2019)</h3>
+                    <p><strong>Sinopse:</strong> Um ator de televisão e seu dublê enfrentam desafios enquanto tentam se ajustar às mudanças na indústria cinematográfica durante o fim da década de 1960.</p>
+                    <p><i class="fas fa-star"></i><strong> Nota:</strong> 7.9/10</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bear Movies. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+  
+
+        // Função de busca
+        function searchMovie() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const sections = document.querySelectorAll('.movie-section');
+            let hasVisibleItems = false;
+
+            sections.forEach(section => {
+                const items = section.querySelectorAll('.item');
+                let hasVisibleItemsInSection = false;
+
+                items.forEach(item => {
+                    const title = item.querySelector('h3').textContent.toLowerCase();
+                    if (title.includes(input)) {
+                        item.style.display = 'block';
+                        hasVisibleItemsInSection = true;
+                        hasVisibleItems = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                section.style.display = hasVisibleItemsInSection ? 'block' : 'none';
+            });
+
+            // Exibe uma mensagem se nenhum item for encontrado
+            if (!hasVisibleItems) {
+                document.querySelector('main').innerHTML += '<p class="no-results">Nenhum filme encontrado.</p>';
+            } else {
+                document.querySelector('.no-results')?.remove();
+            }
+        }
+
+            // Função para definir um cookie
+            function setCookie(name, value, days) {
+                const expires = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
+                document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+            }
+        
+            // Função para obter um cookie
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(';').shift();
+            }
+        
+            // Atualiza o tema com base no cookie
+            function applyThemeFromCookie() {
+                const savedTheme = getCookie('theme');
+                if (savedTheme) {
+                    document.body.dataset.theme = savedTheme;
+                    const icon = document.querySelector('.material-icons');
+                    icon.textContent = savedTheme === 'dark' ? 'dark_mode' : 'brightness_5'; // Ícone de sol ou lua
+                }
+            }
+        
+            // Função para alternar o tema
+            function toggleTheme() {
+                const body = document.body;
+                const currentTheme = body.dataset.theme;
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                // Alterna o tema
+                body.dataset.theme = newTheme;
+        
+                // Atualiza o ícone
+                const icon = document.querySelector('.material-icons');
+                icon.textContent = newTheme === 'dark' ? 'dark_mode' : 'brightness_5'; // Ícone de sol ou lua
+                
+                // Salva o tema no cookie
+                setCookie('theme', newTheme, 7); // Salva o tema no cookie por 7 dias
+            }
+        
+            // Configura os eventos ao carregar a página
+            document.addEventListener('DOMContentLoaded', () => {
+                // Aplica o tema baseado no cookie
+                applyThemeFromCookie();
+        
+                // Configura o evento de busca
+                document.getElementById('searchInput').addEventListener('input', searchMovie);
+        
+                // Configura o scroll suave para links de navegação
+                const navLinks = document.querySelectorAll('nav ul li a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetId = link.getAttribute('href').substring(1);
+                        const targetSection = document.getElementById(targetId);
+                        if (targetSection) {
+                            window.scrollTo({
+                                top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+        
+                // Configura o evento de clique nos itens
+                document.querySelectorAll('.item').forEach(item => {
+                    item.addEventListener('click', () => {
+                        console.log('Item clicado:', item);
+                        const title = item.getAttribute('data-title');
+                        const year = item.getAttribute('data-year');
+                        const synopsis = item.getAttribute('data-synopsis');
+                        const rating = item.getAttribute('data-rating');
+                        const image = item.getAttribute('data-image');
+                        const trailer = item.getAttribute('data-trailer'); // Adiciona o link do trailer
+
+        window.location.href = `index2.html?title=${encodeURIComponent(title)}&year=${encodeURIComponent(year)}&synopsis=${encodeURIComponent(synopsis)}&rating=${encodeURIComponent(rating)}&image=${encodeURIComponent(image)}&trailer=${encodeURIComponent(trailer)}`;
+                    });
+                });
+            });
+        
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            const sections = document.querySelectorAll('.movie-section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+        
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.toLowerCase();
+                sections.forEach(section => {
+                    const sectionId = section.id;
+                    const items = section.querySelectorAll('.item');
+                    let hasVisibleItems = false;
+                    items.forEach(item => {
+                        const title = item.querySelector('h3').textContent.toLowerCase();
+                        if (title.includes(query)) {
+                            item.style.display = 'block';
+                            hasVisibleItems = true;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                    section.style.display = hasVisibleItems ? 'block' : 'none';
+                });
+            });
+        
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const title = item.getAttribute('data-title');
+                    const year = item.getAttribute('data-year');
+                    const synopsis = item.getAttribute('data-synopsis');
+                    const rating = item.getAttribute('data-rating');
+                    const image = item.getAttribute('data-image');
+                    const trailer = item.getAttribute('data-trailer'); // Adiciona o link do trailer
+
+                    window.location.href = `index2.html?title=${encodeURIComponent(title)}&year=${encodeURIComponent(year)}&synopsis=${encodeURIComponent(synopsis)}&rating=${encodeURIComponent(rating)}&image=${encodeURIComponent(image)}&trailer=${encodeURIComponent(trailer)}`;
+                });
+            });
+        });
+        
+    </script>
+</body>
+</html>

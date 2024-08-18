@@ -1,0 +1,390 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Creepster&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Lobster&family=Montserrat+Subrayada&family=New+Amsterdam&family=Orbitron:wght@400..900&family=Smokum&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+</style>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Bare_Bear-removebg-preview(1).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Bear Movies</title>
+    <link rel="stylesheet" href="styles.css">
+       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  
+       <style>
+        body {
+            background-color: #F4EEE0; /* Cor de fundo */
+            color: #000000; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            background-color: #333333; /* Cor de fundo do nav */
+            color: #FFFFFF; /* Cor do texto do nav */
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; /* Centraliza verticalmente */
+            padding: 40px; /* Aumenta o espaço ao redor dos itens */
+            gap: 30px; /* Espaço entre as seções */
+            height: calc(100vh - 80px); /* Ajusta a altura para centralização vertical */
+            box-sizing: border-box;
+        }
+        .video-section {
+            flex: 2;
+            margin-right: 20px;
+        }
+        .video-section iframe {
+            width: 100%;
+            height: 515px; /* Altura do vídeo */
+            border: none;
+            border-radius: 15px;
+        }
+        .details-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Centraliza verticalmente */
+            padding: 20px; /* Adiciona espaçamento interno */
+            box-sizing: border-box;
+        }
+        .details-section h2 {
+            font-family: 'Cinzel', serif; /* Fonte bonita de filme */
+           
+            font-size: 2.5em; /* Tamanho grande para o título */
+            margin-top: 0;
+            text-align: center;
+        }
+        .details-section .rating {
+            font-family: 'Cinzel', serif; /* Fonte bonita de filme */
+           
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.3em;
+            margin: 20px 0;
+        }
+        .sinopse{
+            font-family: 'Roboto Slab', serif; /* Fonte estilizada para a sinopse */
+            text-align: center;
+            margin: 20px 0;
+        }
+        .details-section .rating::before {
+            content: '★'; /* Ícone de estrela */
+            color: gold;
+            font-size: 1em;
+            margin-right: 5px;
+        }
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centraliza verticalmente */
+        }
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem se encaixe bem no contêiner */
+            border-radius: 15px; /* Bordas arredondadas */
+            border: 2px solid #000000; /* Borda da imagem */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Efeito de sombra para profundidade */
+            position: relative;
+            overflow: hidden;
+        }
+        .image-section img::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+            z-index: 1;
+        }
+        .footer {
+             text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .placeholder {
+            height: 100px; /* Deve corresponder à altura do header */
+        }
+    </style>
+    
+</head>
+
+
+<div class="placeholder"></div>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="Bare_Bear-removebg-preview(1).png" alt="Logo do Site" class="logo">
+        </a>
+        
+        <a href="index.html" class="bear-link">
+            <h1 class="bear">Bear Movies</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html#guerra">Guerra</a></li>
+                <li><a href="index.html#ficcao-cientifica">Ficção Científica</a></li>
+                <li><a href="index.html#cultura-pop">Cultura Pop</a></li>
+                <li><a href="index.html#faroeste">Faroeste</a></li>
+                <li><a href="index.html#drama-crime">Drama / Crime</a></li>
+                <li><a href="index.html#acao">Ação</a></li>
+                <li><a href="index.html#horror-suspense">Horror / Suspense</a></li>
+                <li><a href="index.html#animacao-fantasia">Animação / Fantasia</a></li>
+                <li><a href="index.html#biografia">Biografia / Histórias Reais</a></li>
+                <li><a href="index.html#comedia">Comédia / Mistura de Gêneros</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar filme..." oninput="searchMovie()">
+        </div>
+        <div id="theme-toggle" class="theme-toggle">
+            <span class="material-icons" onclick="toggleTheme()">brightness_5</span>
+        </div>
+        
+        
+    </header>
+    
+    <div class="container">
+        <div class="video-section">
+            <iframe id="movie-trailer" src="https://www.youtube.com/embed/ID_DO_VIDEO" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="details-section">
+            <h2 id="movie-title">Título do Filme</h2>
+            <p class="sinopse"><strong>Sinopse:</strong> <span id="movie-synopsis">Esta é uma breve sinopse do filme.</span></p>
+            <p class="rating"><strong>Nota:</strong> <span id="movie-rating">8.5</span>/10</p>
+        </div>
+        <div class="image-section">
+            <img id="movie-image" src="" alt="Imagem do Filme">
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Bear Movies. Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+  
+
+        // Função de busca
+        function searchMovie() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const sections = document.querySelectorAll('.movie-section');
+            let hasVisibleItems = false;
+
+            sections.forEach(section => {
+                const items = section.querySelectorAll('.item');
+                let hasVisibleItemsInSection = false;
+
+                items.forEach(item => {
+                    const title = item.querySelector('h3').textContent.toLowerCase();
+                    if (title.includes(input)) {
+                        item.style.display = 'block';
+                        hasVisibleItemsInSection = true;
+                        hasVisibleItems = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                section.style.display = hasVisibleItemsInSection ? 'block' : 'none';
+            });
+
+            // Exibe uma mensagem se nenhum item for encontrado
+            if (!hasVisibleItems) {
+                document.querySelector('main').innerHTML += '<p class="no-results">Nenhum filme encontrado.</p>';
+            } else {
+                document.querySelector('.no-results')?.remove();
+            }
+        }
+
+            // Função para definir um cookie
+            function setCookie(name, value, days) {
+                const expires = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
+                document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+            }
+        
+            // Função para obter um cookie
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(';').shift();
+            }
+        
+            // Atualiza o tema com base no cookie
+            function applyThemeFromCookie() {
+                const savedTheme = getCookie('theme');
+                if (savedTheme) {
+                    document.body.dataset.theme = savedTheme;
+                    const icon = document.querySelector('.material-icons');
+                    icon.textContent = savedTheme === 'dark' ? 'dark_mode' : 'brightness_5'; // Ícone de sol ou lua
+                }
+            }
+        
+            // Função para alternar o tema
+            function toggleTheme() {
+                const body = document.body;
+                const currentTheme = body.dataset.theme;
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                // Alterna o tema
+                body.dataset.theme = newTheme;
+        
+                // Atualiza o ícone
+                const icon = document.querySelector('.material-icons');
+                icon.textContent = newTheme === 'dark' ? 'dark_mode' : 'brightness_5'; // Ícone de sol ou lua
+                
+                // Salva o tema no cookie
+                setCookie('theme', newTheme, 7); // Salva o tema no cookie por 7 dias
+            }
+        
+            // Configura os eventos ao carregar a página
+            document.addEventListener('DOMContentLoaded', () => {
+                // Aplica o tema baseado no cookie
+                applyThemeFromCookie();
+            })
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            const sections = document.querySelectorAll('.movie-section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+        
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.toLowerCase();
+                sections.forEach(section => {
+                    const sectionId = section.id;
+                    const items = section.querySelectorAll('.item');
+                    let hasVisibleItems = false;
+                    items.forEach(item => {
+                        const title = item.querySelector('h3').textContent.toLowerCase();
+                        if (title.includes(query)) {
+                            item.style.display = 'block';
+                            hasVisibleItems = true;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                    section.style.display = hasVisibleItems ? 'block' : 'none';
+                });
+            });
+        
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+        
+// Função para obter parâmetros da URL
+function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+// Ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtém os parâmetros da URL
+    const title = getQueryParam('title');
+    const year = getQueryParam('year');
+    const synopsis = getQueryParam('synopsis');
+    const rating = getQueryParam('rating');
+    const image = getQueryParam('image');
+    const trailer = getQueryParam('trailer'); // Obtém o link do trailer
+
+    // Atualiza os elementos da página com os parâmetros
+    document.getElementById('movie-title').textContent = title || 'Título do Filme';
+    document.getElementById('movie-synopsis').textContent = synopsis || 'Esta é uma breve sinopse do filme.';
+    document.getElementById('movie-rating').textContent = rating || '8.5';
+    document.getElementById('movie-image').src = image || 'URL_DA_IMAGEM';
+    if (trailer) {
+        // Converte a URL do trailer para o formato de incorporação do YouTube
+        const embedUrl = trailer.replace('watch?v=', 'embed/');
+        document.getElementById('movie-trailer').src = embedUrl;
+    } else {
+        document.getElementById('movie-trailer').style.display = 'none'; // Oculta o iframe se não houver URL
+    }
+});
+
+        
+            document.addEventListener('DOMContentLoaded', () => {
+                const searchInput = document.getElementById('searchInput');
+                const sections = document.querySelectorAll('.movie-section');
+                const navLinks = document.querySelectorAll('nav ul li a');
+                
+                searchInput.addEventListener('input', () => {
+                    const query = searchInput.value.toLowerCase();
+                    sections.forEach(section => {
+                        const sectionId = section.id;
+                        const items = section.querySelectorAll('.item');
+                        let hasVisibleItems = false;
+                        items.forEach(item => {
+                            const title = item.querySelector('h3').textContent.toLowerCase();
+                            if (title.includes(query)) {
+                                item.style.display = 'block';
+                                hasVisibleItems = true;
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                        section.style.display = hasVisibleItems ? 'block' : 'none';
+                    });
+                });
+                
+                navLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetId = link.getAttribute('href').substring(1);
+                        const targetSection = document.getElementById(targetId);
+                        if (targetSection) {
+                            window.scrollTo({
+                                top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                                behavior: 'smooth'
+                            });
+                        } else {
+                            // Redirecionar para index.html se a seção não estiver na página atual
+                            window.location.href = link.getAttribute('href');
+                        }
+                    });
+                });
+            });
+            
+
+    </script>
+</body>
+</html>
